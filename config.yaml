@@ -1,0 +1,17 @@
+host: "127.0.0.1"
+port: 8883
+service:
+  name: "myservice"
+  displayName: "My service"
+youplus:
+  enable: true
+  rpc:
+    url: "localhost:50055"
+    autoReconnect: true
+    maxRetry: 1000
+  entity:
+    enable: true
+    name: "myservice"
+    version: 1
+    heartbeatRate: 3000
+

@@ -1,0 +1,5 @@
+.idea
+go.sum
+main.exe
+static/*
+!static/.gitkeep
