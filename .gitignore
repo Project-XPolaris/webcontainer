@@ -3,3 +3,4 @@ go.sum
 main.exe
 static/*
 !static/.gitkeep
+pack-output/
