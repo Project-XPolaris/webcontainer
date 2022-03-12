@@ -1,0 +1,13 @@
+version: '3' 
+services:
+  main:
+    build: .
+    ports:
+      - 8603:6002
+    volumes:
+      - ./static:/static
+      - type: bind
+        source: ./config.yaml
+        target: /config.yaml
+    restart: always
+    
