@@ -3,15 +3,14 @@ module webcontainer
 go 1.12
 
 require (
-	github.com/kardianos/service v1.2.0
+	github.com/allentom/harukap v0.0.0-20220312091811-b34fdf929296
+	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
-	github.com/project-xpolaris/youplustoolkit v0.0.0-20210819072854-fca2c927b193
+	github.com/project-xpolaris/youplustoolkit v0.0.0-20220312090952-4b24318687f4
+	github.com/rs/cors v1.8.2 // indirect
 	github.com/sirupsen/logrus v1.8.1
-	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/spf13/viper v1.7.0
-	github.com/stretchr/testify v1.6.1 // indirect
-	github.com/urfave/cli/v2 v2.3.0
-	golang.org/x/sys v0.0.0-20210817190340-bfb29a6856f2 // indirect
+	github.com/spf13/afero v1.8.2 // indirect
+	github.com/spf13/viper v1.10.1
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
-	gopkg.in/yaml.v2 v2.2.8 // indirect
+	gopkg.in/ini.v1 v1.66.4 // indirect
 )
