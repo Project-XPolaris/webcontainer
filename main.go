@@ -3,11 +3,11 @@ package main
 import (
 	"github.com/allentom/harukap"
 	"github.com/allentom/harukap/cli"
+	"github.com/projectxpolaris/webcontainer/config"
+	"github.com/projectxpolaris/webcontainer/plugin"
+	"github.com/projectxpolaris/webcontainer/youlog"
+	"github.com/projectxpolaris/webcontainer/youplus"
 	"github.com/sirupsen/logrus"
-	"webcontainer/config"
-	"webcontainer/plugin"
-	"webcontainer/youlog"
-	"webcontainer/youplus"
 )
 
 func main() {

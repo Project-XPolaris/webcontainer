@@ -3,19 +3,11 @@ application: "My Service"
 instance: "main"
 service:
   name: "MyService"
-  display: "Mye Service"
-youplus:
-  auth: true
-  enablepath: true
-  url: 'http://localhost:8999'
-  rpc: 'localhost:50055'
-  entity:
-    enable: true
-    name: "myservice"
-    version: 1
+  display: "My Service"
 log:
   youlog:
     application: "My Service"
     instance: "main"
-    addr: "localhost:50052"
-    remote: true
+    engine:
+      local:
+        type: logrus

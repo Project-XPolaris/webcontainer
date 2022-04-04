@@ -3,9 +3,9 @@ package plugin
 import (
 	"fmt"
 	"github.com/allentom/harukap"
+	"github.com/projectxpolaris/webcontainer/config"
+	"github.com/projectxpolaris/webcontainer/filesystem"
 	"net/http"
-	"webcontainer/config"
-	"webcontainer/filesystem"
 )
 
 type LauncherPlugin struct {
