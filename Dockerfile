@@ -4,12 +4,9 @@ ARG GOPROXY=https://goproxy.cn
 WORKDIR ${GOPATH}/src/github.com/projectxpolaris/webcontainer
 
 COPY go.mod .
-COPY go.sum .
-
 RUN go mod download
-
 COPY . .
-
+RUN go mod tidy
 RUN go build -o ${GOPATH}/bin/webcontainer ./main.go
 
 FROM debian:buster-slim
