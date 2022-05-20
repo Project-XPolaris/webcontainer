@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/allentom/harukap"
 	"github.com/allentom/harukap/cli"
+	"github.com/projectxpolaris/webcontainer/application"
 	"github.com/projectxpolaris/webcontainer/config"
 	"github.com/projectxpolaris/webcontainer/plugin"
 	"github.com/projectxpolaris/webcontainer/youlog"
@@ -31,5 +32,10 @@ func main() {
 	if err != nil {
 		logrus.Fatal(err)
 	}
+	engine, err := application.GetHttpService()
+	if err != nil {
+		logrus.Fatal(err)
+	}
+	appEngine.HttpService = engine
 	appWrap.RunApp()
 }

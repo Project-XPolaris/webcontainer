@@ -1,6 +1,13 @@
-port: '6002'
+port: '6005'
 application: "My Service"
 instance: "main"
+staticpath: './static'
+htmlsource: './static/index.html'
+apiproxy:
+  enable: false
+  proxy: 'http://localhost:3000'
+  prefix: '/api'
+  rewrite: true
 service:
   name: "MyService"
   display: "My Service"

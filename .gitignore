@@ -5,3 +5,5 @@ static/*
 !static/.gitkeep
 pack-output/
 main
+/dev*static
+/dev*config.yaml
